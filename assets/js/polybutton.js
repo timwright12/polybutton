@@ -1,5 +1,5 @@
 /*
-  Polybutton - An accessibile version of links that look like buttons
+  Polybutton - An accessible version of links that look like buttons
   License: MIT/GPLv2
   Author: Tim Wright, csskarma.com
   Script structure inspired by Scott Jehl's Picturefill

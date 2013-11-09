@@ -1,4 +1,4 @@
 polybutton
 ==========
 
- An accessibile version of links that look like buttons
+ An accessible version of links that look like buttons
