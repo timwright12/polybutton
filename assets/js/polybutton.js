@@ -35,6 +35,7 @@
         genBtn.setAttribute("class", initClass);
         genBtn.setAttribute("type", type);
         genBtn.setAttribute("data-url", href);
+        genBtn.setAttribute("role", "button");
         genBtn.innerHTML = value;
         
         // add the new button into the DOM
