@@ -1,8 +1,9 @@
 polybutton
 ==========
 
- An accessible version of links that look like buttons
+An accessible version of links that look like buttons
 
+[Read the associated blog post](http://www.csskarma.com/blog/polybutton)
 
 Installation
 --------------
@@ -27,7 +28,6 @@ Breaking down the Polybutton markup
 --------------
 
 Let’s take a moment to break down the Polybutton elements so we’re on the same page with what’s happening the the HTML.
-
 
 ##### span
 I chose to use a span because there’s no real semantic meaning behind it, and it’s default display state of inline wouldn’t interrupt the natural flow of the layout while allowing the button styles to come through. A very unobtrusive element overall.
