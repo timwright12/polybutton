@@ -13,14 +13,21 @@
 
     var btn = b.document.querySelectorAll( "span[data-accessible]" );
     var count = btn.length;
-    var i, obj, access, href, type, value, initClass, genBtn;
+    var i, obj, noscript, noscriptEl, access, href, type, value, initClass, genBtn;
 
     // Loop through the polybuttons
     for ( i = 0; i < count; i = i + 1 ) {
       
       // store some variables
       obj = btn[i];
-      href = obj.getAttribute('data-href');
+      
+      noscript = document.createElement('div');
+      noscriptEl = obj.querySelector('noscript');
+      noscript.innerHTML = (noscriptEl) ? noscriptEl.textContent : '';
+      noscript = noscript.querySelector('a');
+      noscript = (noscript) ? noscript.getAttribute('href') : '#';
+      
+      href = obj.getAttribute('data-href') || noscript;
       access = obj.getAttribute('data-accessible');
       type = obj.getAttribute('data-type');
       value = obj.getAttribute('data-value');
